@@ -24,7 +24,7 @@ var TopSearchPanel = React.createClass({
 		return (
 			<section>
 				<ControlPanel expanded={!this.state.hasQuery} />
-				<MiniBranding visible={this.state.hasQuery} />
+				<MiniBranding isVisible={this.state.hasQuery} />
 				<SearchBox hasQuery={this.state.hasQuery}/>
 			</section>
 		);

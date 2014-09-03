@@ -1,0 +1,65 @@
+body, td, a, p, .h {
+	font-family: arial,sans-serif;
+}
+
+a {
+	color: #12c;
+	text-decoration: none;
+}
+
+.hidden {
+	display: none;
+}
+
+.zero-margin {
+	margin-left: 0!important;
+	margin-right: 0!important;
+}
+
+.zero-flex {
+	display: inline-block;
+	-webkit-flex: 0 0 auto;
+	flex: 0 0 auto;
+	-webkit-flex: 0 0 main-size;
+	flex: 0 0 main-size;
+}
+
+.width-127{
+	min-width: 127px;
+	max-width: 127px;
+}
+
+.mini-branding-container {
+	height: 60px;
+	line-height: 58px;
+	vertical-align: middle;
+	overflow: hidden;
+	position: relative;
+	z-index: 987;
+}
+
+.mini-branding {
+	position: absolute;
+	padding: 0 20px 0 15px;
+	line-height: 58px;
+}
+
+.mini-branding .goto {
+	position: relative;
+	top: 2px;
+	display: inline-block;
+	outline: none;
+	vertical-align: middle;
+}
+
+.mini-logo {
+	background-image: url('/img/v1_2e543709.png');
+	background-size: 112px 1828px;
+}
+
+.mini-branding .mini-logo {
+	background-position: 0 -138px;
+	height: 33px;
+	width: 92px;
+	display: block;
+}
