@@ -29,6 +29,31 @@ a {
 	max-width: 127px;
 }
 
+.dark-grey {
+	color: #222;
+}
+
+.size-16 {
+	font: 16px arial,sans-serif;
+}
+
+.position-relative {
+	position: relative;
+}
+
+.ensure-border-box {
+	box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+}
+
+.height-100pc {
+	height: 100%;
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
 .mini-branding-container {
 	height: 60px;
 	line-height: 58px;
@@ -62,4 +87,22 @@ a {
 	height: 33px;
 	width: 92px;
 	display: block;
+}
+
+.search-box {
+	border: none;
+	padding: 0px;
+	margin: 0px;
+	height: auto;
+	width: 100%;
+	position: absolute;
+	z-index: 6;
+	left: 0px;
+	outline: none;
+	background: url(data:image/gif;base64,R0lGODlhAQABAID/AMDAwAAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw%3D%3D) transparent;
+	vertical-align: top;
+}
+
+.search-box-container {
+	padding: 5px 9px 0;
 }

@@ -5,13 +5,14 @@
 var React = require('react');
 var ReactPropTypes = React.PropTypes;
 var MiniBranding = require("./MiniBranding.react");
-var SearchBox = require("./SearchBox.react");
+var SearchForm = require("./SearchForm.react");
 var ControlPanel = require("./ControlPanel.react");
 
 var TopSearchPanel = React.createClass({
 
 	propTypes: {
-		hasQuery: ReactPropTypes.bool.isRequired
+		hasQuery: ReactPropTypes.bool.isRequired,
+		query: ReactPropTypes.string
 	},
 
 	getInitialState: function(){
@@ -25,7 +26,7 @@ var TopSearchPanel = React.createClass({
 			<section>
 				<ControlPanel expanded={!this.state.hasQuery} />
 				<MiniBranding isVisible={this.state.hasQuery} />
-				<SearchBox hasQuery={this.state.hasQuery}/>
+				<SearchForm query={this.props.query}/>
 			</section>
 		);
 	}
