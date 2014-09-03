@@ -21,7 +21,7 @@ var SearchForm = React.createClass({
 
 	render: function() {
 		return (
-			<form>
+			<form className="block width-572 auto-margin zero-padding nowrap">
 				<SearchBox query={this.props.query}/>
 				<SearchControls />
 			</form>

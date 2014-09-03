@@ -20,13 +20,24 @@ var SearchBox = React.createClass({
 
 	render: function() {
 		return (
-			<fieldset>
-				<div className="search-box-containter position-relative ensure-border-box overflow-hidden height-100pc">
-					<input className="dark-grey size-16 search-box"
-						name="q" autoComplete="off" spellCheck="false"
-						placeholder={this.props.placeholder}
-						onChange={this.onChange}
-						value={this.state.value} />
+			<fieldset className="search-box-fieldset zero-margin one-flex">
+				<div className="inline-block width-100pc valign-top">
+					<div className="search-box-activity-monitor white-bg ensure-border-box position-relative">
+						<div className="position-absolute place-at-origin height-100pc width-100pc">
+							<div className="white-bg ensure-border-box search-box-height valign-top">
+								<div className="ensure-border-box search-box-padding overflow-hidden height-100pc">
+									<div className="position-relative">
+										<input className="dark-grey size-16 search-box"
+											name="q" autoComplete="off" 
+											type="text" spellCheck="false"
+											placeholder={this.props.placeholder}
+											onChange={this.onChange}
+											value={this.state.value} />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</fieldset>
 		);

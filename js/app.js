@@ -5,7 +5,12 @@
  */
 
 var React = require("react");
+var SearchForm = require("./components/SearchForm.react");
 
+React.renderComponent(
+	<SearchForm />,
+	document.getElementById("base")
+);
 
 // For React DevTools
 window.React = React;
