@@ -22,11 +22,6 @@ var Viewport = React.createClass({
 
 	render: function() {
 		return (
-			<section>
-				<TopSearchPanel hasQuery={this.state.hasQuery} />
-				<HeroOverlay display={!this.state.hasQuery} />
-				<Footer />
-			</section>
 		);
 	}
 

@@ -21,10 +21,14 @@ var SearchForm = React.createClass({
 
 	render: function() {
 		return (
-			<form className="block width-572 auto-margin zero-padding nowrap">
-				<SearchBox query={this.props.query}/>
-				<SearchControls />
-			</form>
+			<div>
+				<div className="col-md-8 col-md-offset-2">
+					<SearchBox />
+				</div>
+				<div className="col-md-8 col-md-offset-2">
+					<SearchControls />
+				</div>
+			</div>
 		);
 	}
 

@@ -19,13 +19,7 @@ var MiniBranding = React.createClass({
 
 	render: function() {
 		return (
-			<div className={"mini-branding-container width-127 zero-margin zero-flex" + (this.state.isVisible ? "" : " hidden")}>
-				<div className="mini-branding">
-				    <a className="goto" href="/webhp?tab=ww&amp;ei=O_QGVKS_GYLJuASevIGICQ&amp;ved=0CBgQ1S4" title="Go to Google Home">
-				    	<span className="mini-logo"></span>
-			    	</a>
-				</div>
-			</div>
+
 		);
 	}
 
